@@ -1,0 +1,115 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;            /* White */
+    --foreground: 220 25% 15%;          /* Dark Gray for text */
+
+    --card: 0 0% 100%;                   /* White */
+    --card-foreground: 220 25% 15%;      /* Dark Gray for text on cards */
+
+    --popover: 0 0% 100%;                /* White */
+    --popover-foreground: 220 25% 15%;   /* Dark Gray */
+
+    --primary: 220 83% 53%;             /* Vibrant Blue #2563EB */
+    --primary-foreground: 0 0% 100%;   /* White for text on primary */
+
+    --secondary: 220 70% 75%;           /* Lighter, less saturated version of new primary */
+    --secondary-foreground: 220 70% 30%;  /* Darker Blue for text on secondary */
+
+    --muted: 0 0% 97%;                  /* Even Lighter Gray */
+    --muted-foreground: 220 15% 55%;   /* Medium Gray for muted text */
+
+    --accent: 287 85% 54%;              /* Electric Purple #BE29EC */
+    --accent-foreground: 0 0% 100%;        /* White for text on accent */
+
+    --destructive: 0 84% 60%;           /* Standard Red */
+    --destructive-foreground: 0 0% 98%; /* Standard light text for destructive */
+
+    --border: 0 0% 88%;                 /* Light Gray Border */
+    --input: 0 0% 92%;                  /* Input background - slightly off-white gray */
+    --ring: 220 83% 48%;                /* Slightly darker new primary for focus rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 220 80% 60%; /* Vibrant Blue based */
+    --chart-2: 287 80% 60%; /* Electric Purple based */
+    --chart-3: 150 70% 50%; /* Green */
+    --chart-4: 35 90% 60%;  /* Orange */
+    --chart-5: 5 80% 65%;   /* Reddish */
+
+    /* Sidebar colors */
+    --sidebar-background: 0 0% 96%; 
+    --sidebar-foreground: 220 25% 20%;
+    --sidebar-primary: 220 80% 55%; /* Vibrant Blue for sidebar primary */
+    --sidebar-primary-foreground: 0 0% 100%; 
+    --sidebar-accent: 220 15% 90%; /* Very light blue for sidebar accent background */
+    --sidebar-accent-foreground: 220 80% 50%; /* Vibrant blue for text on sidebar accent */
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 220 83% 50%; /* Vibrant Blue for sidebar focus rings */
+  }
+
+  .dark {
+    --background: 220 20% 10%;        
+    --foreground: 0 0% 95%;             
+
+    --card: 220 20% 13%;              
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 8%;            
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 220 83% 60%;             /* Slightly lighter Vibrant Blue for dark mode */
+    --primary-foreground: 0 0% 100%;   /* White for text on dark primary */
+
+    --secondary: 220 60% 35%;           /* Darker, desaturated version of new primary */
+    --secondary-foreground: 220 70% 80%;  /* Lighter blue text */
+
+    --muted: 220 15% 18%;             
+    --muted-foreground: 210 25% 60%;
+
+    --accent: 287 80% 60%;              /* Adjusted Electric Purple for dark */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 50%;           
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 25%;              
+    --input: 220 15% 20%;               
+    --ring: 220 83% 55%;                /* Slightly lighter ring for dark mode */
+    
+    /* Sidebar colors for dark theme */
+    --sidebar-background: 220 20% 12%;
+    --sidebar-foreground: 0 0% 92%;
+    --sidebar-primary: 220 80% 62%; /* Vibrant Blue for dark sidebar primary */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 20%; /* Dark blue-gray for sidebar accent bg */
+    --sidebar-accent-foreground: 220 80% 70%; /* Lighter vibrant blue for text on sidebar accent */
+    --sidebar-border: 220 15% 28%;
+    --sidebar-ring: 220 83% 58%; /* Vibrant Blue for dark sidebar focus rings */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body; 
+    scroll-behavior: smooth;
+  }
+  .dark body {
+    @apply bg-background text-foreground; 
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline text-foreground; 
+  }
+   p, li, span, div {
+     @apply font-body text-foreground; 
+  }
+}
