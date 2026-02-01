@@ -25,7 +25,7 @@ const educationEntries: EducationEntry[] = [
     institution: "University of Lahore",
     period: "Sep. 2016 – Jun. 2020",
     highlights: [
-      "1st out of 200+ students",
+      "1st out of 250+ students",
       "GPA: 3.91/4.00",
       "Gold Medal for Highest Distinction",
     ],
