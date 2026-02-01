@@ -9,7 +9,7 @@ interface Hobby {
 }
 
 const hobbiesData: Hobby[] = [
-  { name: "Owning and managing a YouTube channel with 38K+ subscribers", icon: Youtube },
+  { name: "Own a YouTube channel with 38K+ subscribers", icon: Youtube },
   { name: "Exploring emerging technologies (Agentic AI, LLMs, Blockchain, Smart Grids, IBRs, Grid-Forming Inverters)", icon: Lightbulb },
   { name: "Sustainability and green technologies", icon: Leaf },
   { name: "Engaging in personal development and continuous learning", icon: UserCheck },
